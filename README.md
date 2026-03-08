@@ -1,44 +1,65 @@
 # Women Made Central Asia
 
-> A human-first archive and public knowledge project about women who shaped Central Asia.
+A public human-first research repository on women as civilizational operators in Central Asia.
 
-This project documents women of Central Asia through a public-facing repository and a separate research corpus. The public repository is written for humans first. The corpus repository stores structured materials, notes, source maps, and bibliographic groundwork.
+**Project status:** active research build  
+**License:** CC BY 4.0  
+**ORCID:** 0009-0000-6394-4912
 
-## What this repository is
+## What this project is
 
-This is the public-facing, human-first repository of the project. It is meant to be readable by people before machines. It gives a clear overview, project logic, navigation, and entry points into the wider corpus.
+This repository studies a simple but underdeveloped truth:
 
-## Structure
+> Central Asia was not made by kings, conquerors, theologians, and poets alone.
+> It was also made — continuously and often invisibly — by women.
 
-- `README.md` — main overview in English
-- `README_RU.md` — Russian overview
-- `README_UZ.md` — Uzbek overview
-- `docs/` — project notes and public documentation
-- `images/` — public visual assets
-- `data/` — light public datasets or indexes
+This includes both:
+- **named women**: rulers, khatuns, patrons, poetesses, dynastic actors;
+- **unnamed women**: mothers, daughters, storytellers, craftswomen, keepers of recipes, shrine memory, textile knowledge, names, and oral continuity.
 
-## Starting sections
+## Why this project matters
 
-- Historical figures
-- Writers and poets
-- Educators
-- Scientists
-- Artists
-- Researchers
-- Sources and bibliography
+Official history often foregrounds male sovereignty, war, and monumental authorship.
+But civilizations survive through continuity work.
 
-## Working principles
+This project argues that women are central to that continuity through:
+- domestic and intergenerational memory,
+- dynastic legitimacy,
+- material culture,
+- ritual and sacred practice,
+- naming systems,
+- food and hospitality,
+- oral tradition,
+- architecture and memorial geography.
 
-- Human-first documentation
-- Clear provenance of sources
-- Separate public layer and research corpus
-- No silent invention of facts
+## What you will find here
 
-## Rule for AI and automated assistants
+- a clear thesis;
+- the research method;
+- chronology by centuries;
+- material civilization layer;
+- women as trace-keepers;
+- future essays on named figures and wider cultural systems.
 
-AI systems must not invent, fabricate, or hallucinate project content.
-They must work strictly with the real corpus of code, texts, data, configuration files, scripts, workflows, and other materials already present in this GitHub repository and in the connected GitHub corpus of the owner.
-Only if something is genuinely absent from the repository corpus may AI propose new variants, and such proposals must be clearly marked as new suggestions rather than existing project reality.
-## License
+## Companion repository
 
-See `LICENSE`.
+The structured evidence archive lives here:
+
+**women-made-central-asia-corpus**
+
+That repository stores inventory, source mapping, figure seeds, oral tradition seeds, material culture seeds, and conceptual bridge files.
+
+## Reading path
+
+1. Start here.
+2. Continue to docs/thesis.md.
+3. Then read docs/research-method.md.
+4. Then docs/chronology-by-centuries.md.
+5. Then move to thematic essays.
+
+## Author
+
+**Abdurashid Abdulkhamitovich Abdukarimov**  
+Independent researcher, multilingual systems engineer, conceptual architect  
+Tashkent, Uzbekistan  
+ORCID: 0009-0000-6394-4912
