@@ -11,7 +11,7 @@ A public human-first research repository on women as civilizational operators in
 This repository studies a simple but underdeveloped truth:
 
 > Central Asia was not made by kings, conquerors, theologians, and poets alone.
-> It was also made â continuously and often invisibly â by women.
+> It was also made — continuously and often invisibly — by women.
 
 This includes both:
 - **named women**: rulers, khatuns, patrons, poetesses, dynastic actors;
