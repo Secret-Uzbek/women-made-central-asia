@@ -11,7 +11,7 @@ A public human-first research repository on women as civilizational operators in
 This repository studies a simple but underdeveloped truth:
 
 > Central Asia was not made by kings, conquerors, theologians, and poets alone.
-> It was also made â continuously and often invisibly â by women.
+> It was also made вЂ” continuously and often invisibly вЂ” by women.
 
 This includes both:
 - **named women**: rulers, khatuns, patrons, poetesses, dynastic actors;
@@ -65,7 +65,7 @@ Tashkent, Uzbekistan
 ORCID: 0009-0000-6394-4912
 
 ---
-## 🌍 FMP Ecosystem Links
+## ? FMP Ecosystem Links
 | Repo | Layer | Role |
 |---|---|---|
 | [FMP-CENTRAL-REPO](https://github.com/Secret-Uzbek/FMP-CENTRAL-REPO) | L7 | Core Hub |
