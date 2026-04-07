@@ -1,6 +1,6 @@
 # Research Method
 
-## Principle 1 — layered evidence
+## Principle 1 вЂ” layered evidence
 
 This project works with multiple evidence layers:
 - historical scholarship,
@@ -11,7 +11,7 @@ This project works with multiple evidence layers:
 - literary imagination,
 - ontological framing through FMP and Invisible Shadow.
 
-## Principle 2 — different sources, different status
+## Principle 2 вЂ” different sources, different status
 
 Not all sources are equal.
 

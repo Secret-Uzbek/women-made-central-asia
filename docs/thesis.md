@@ -3,7 +3,7 @@
 ## Core statement
 
 Central Asian civilization did not emerge, endure, and transform through male rulers, armies, scholars, and monuments alone.
-It depended on women — named and unnamed — as operators of biological, domestic, dynastic, symbolic, linguistic, ritual, and material continuity.
+It depended on women вЂ” named and unnamed вЂ” as operators of biological, domestic, dynastic, symbolic, linguistic, ritual, and material continuity.
 
 ## Strong version of the thesis
 
