@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-title: Women Made Central Asia
-message: "If you use this repository, please cite it."
+message: "If you use this work, cite it as below."
 authors:
   - family-names: Abdukarimov
     given-names: Abdurashid
-    orcid: https://orcid.org/0009-0000-6394-4912
+    orcid: "https://orcid.org/0009-0000-6394-4912"
+title: "women-made-central-asia"
