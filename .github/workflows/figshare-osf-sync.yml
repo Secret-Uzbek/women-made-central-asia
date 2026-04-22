@@ -1,0 +1,111 @@
+name: Figshare & OSF Sync
+
+on:
+  release:
+    types: [published]
+
+concurrency:
+  group: external-sync-${{ github.repository }}-${{ github.event.release.tag_name }}
+  cancel-in-progress: false
+
+jobs:
+  sync-figshare-osf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Wait for assets
+        run: sleep 30
+
+      - name: Upload to Figshare
+        env:
+          FIGSHARE_TOKEN: ${{ secrets.FIGSHARE_TOKEN }}
+          TITLE: ${{ github.event.repository.name }} - ${{ github.event.release.tag_name }}
+          REPO_URL: https://github.com/${{ github.repository }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "$FIGSHARE_TOKEN" ]; then
+            echo "FIGSHARE_TOKEN not set, skipping"
+            exit 0
+          fi
+
+          PAYLOAD=$(python3 - <<'PY'
+import json, os
+print(json.dumps({
+  "title": os.environ["TITLE"],
+  "description": f"Auto-synced from GitHub release: {os.environ['RELEASE_URL']}",
+  "tags": ["FMP", "fractal-metascience", "open-science"],
+  "references": [os.environ["REPO_URL"]],
+  "categories": [77],
+  "license": 1
+}))
+PY
+)
+
+          RESPONSE=$(curl -s -X POST \
+            -H "Authorization: token $FIGSHARE_TOKEN" \
+            -H "Content-Type: application/json" \
+            "https://api.figshare.com/v2/account/articles" \
+            -d "$PAYLOAD")
+
+          ARTICLE_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('entity_id',''))" 2>/dev/null || echo "")
+
+          if [ -n "$ARTICLE_ID" ]; then
+            echo "Figshare article created: $ARTICLE_ID"
+            curl -s -X POST \
+              -H "Authorization: token $FIGSHARE_TOKEN" \
+              "https://api.figshare.com/v2/account/articles/$ARTICLE_ID/publish" \
+              > /dev/null
+            echo "Published to Figshare"
+          else
+            echo "Could not create Figshare article: $RESPONSE"
+          fi
+
+      - name: Register on OSF
+        env:
+          OSF_TOKEN: ${{ secrets.OSF_TOKEN }}
+          TITLE: ${{ github.event.repository.name }} - ${{ github.event.release.tag_name }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "$OSF_TOKEN" ]; then
+            echo "OSF_TOKEN not set, skipping"
+            exit 0
+          fi
+
+          PAYLOAD=$(python3 - <<'PY'
+import json, os
+print(json.dumps({
+  "data": {
+    "type": "nodes",
+    "attributes": {
+      "title": os.environ["TITLE"],
+      "category": "software",
+      "description": f"Auto-synced from GitHub release: {os.environ['RELEASE_URL']}",
+      "public": True
+    }
+  }
+}))
+PY
+)
+
+          RESPONSE=$(curl -s -X POST \
+            -H "Authorization: Bearer $OSF_TOKEN" \
+            -H "Content-Type: application/vnd.api+json" \
+            "https://api.osf.io/v2/nodes/" \
+            -d "$PAYLOAD")
+
+          NODE_ID=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('data',{}).get('id',''))" 2>/dev/null || echo "")
+
+          if [ -n "$NODE_ID" ]; then
+            echo "OSF node created: https://osf.io/$NODE_ID"
+          else
+            echo "Could not create OSF node: $RESPONSE"
+          fi
