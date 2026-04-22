@@ -57,6 +57,20 @@ That repository stores inventory, source mapping, figure seeds, oral tradition s
 4. Then docs/chronology-by-centuries.md.
 5. Then move to thematic essays.
 
+## Governance and safety
+
+This repository is public and human-first, but not ungoverned.
+
+Repository-level protection and participation rules are defined in:
+
+- [GOVERNANCE.md](./GOVERNANCE.md)
+- [SECURITY.md](./SECURITY.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
+- [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
+- [PUBLICATION_RULE.md](./PUBLICATION_RULE.md)
+- [REPOSITORY_PROTOCOL.md](./REPOSITORY_PROTOCOL.md)
+
 ## Author
 
 **Abdurashid Abdulkhamitovich Abdukarimov**  
