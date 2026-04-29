@@ -4,17 +4,213 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Women Made Central Asia</title>
-  <style>body{font-family:system-ui,Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.6;color:#1a1a1a}h1{font-size:2.2rem}a{color:#1746a2}code{background:#f2f4f8;padding:2px 6px;border-radius:6px}</style>
+  <style>
+    :root {
+      --bg: #f5eee6;
+      --ink: #2a1e1b;
+      --muted: #6b5a56;
+      --line: #d9b8ae;
+      --accent: #9f3b2f;
+      --accent-soft: #f7ddd6;
+      --card: #fffaf6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(159,59,47,0.08), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(193,118,84,0.12), transparent 30%),
+        var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      background: linear-gradient(140deg, rgba(255,250,246,0.96), rgba(247,221,214,0.92));
+      padding: 30px;
+      box-shadow: 0 18px 42px rgba(80, 42, 35, 0.08);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.02;
+      max-width: 11ch;
+    }
+
+    .lead {
+      max-width: 72ch;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: var(--card);
+      padding: 18px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .section {
+      margin-top: 30px;
+      border: 1px solid var(--line);
+      background: rgba(255,250,246,0.84);
+      padding: 24px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.32rem;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .linkbox {
+      border: 1px solid var(--line);
+      background: white;
+      padding: 14px 16px;
+    }
+
+    .linkbox strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>Women Made Central Asia</h1>
-  <p>A human-first archive and public knowledge project about women who shaped Central Asia.</p>
-  <p>This project documents women of Central Asia through a public-facing repository and a separate research corpus. The public repository is written for humans first. The corpus repository stores structured materials, notes, source maps, and bibliographic groundwork.</p>
-  <h2>Repository layers</h2>
-  <ul>
-    <li><strong>women-made-central-asia</strong> вЂ” public-facing human-first repository</li>
-    <li><strong>women-made-central-asia-corpus</strong> вЂ” structured corpus and source layer</li>
-  </ul>
-  <p>See <code>README.md</code> for the main project overview.</p>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Central Asia / Women / Civilization</div>
+      <h1>Women Made Central Asia</h1>
+      <div class="lead">
+        Public human-first research project on women as civilizational operators
+        in Central Asia: named and unnamed, historical and intergenerational,
+        visible and trace-bearing.
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What this project studies</h2>
+        <p>
+          Women not as an appendix to dynasties, but as operators of continuity,
+          memory, legitimacy, culture, care, ritual, and material civilization.
+        </p>
+      </article>
+      <article class="card">
+        <h2>Why it matters</h2>
+        <p>
+          Official history often foregrounds conquest and monumental authorship,
+          while continuity work remains invisible. This project restores that
+          missing layer.
+        </p>
+      </article>
+      <article class="card">
+        <h2>How it is organized</h2>
+        <p>
+          This repository is the public-facing entrance. The deeper structured
+          evidence, mapping, and source layer belongs to the separate corpus
+          repository.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Public Reading Path</h2>
+      <ul>
+        <li>Start with the main <a href="README.md">README</a>.</li>
+        <li>Continue to thesis and research method materials inside the repository.</li>
+        <li>Use this public layer for orientation, not as the only evidence archive.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Repository Layers</h2>
+      <ul>
+        <li><strong>women-made-central-asia</strong> — public human-first repository</li>
+        <li><strong>women-made-central-asia-corpus</strong> — structured source and evidence layer</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>External Surfaces</h2>
+      <div class="links">
+        <div class="linkbox">
+          <strong>Repository</strong>
+          <a href="https://github.com/Secret-Uzbek/women-made-central-asia">github.com/Secret-Uzbek/women-made-central-asia</a>
+        </div>
+        <div class="linkbox">
+          <strong>GitHub Pages</strong>
+          <a href="https://secret-uzbek.github.io/women-made-central-asia/">secret-uzbek.github.io/women-made-central-asia</a>
+        </div>
+        <div class="linkbox">
+          <strong>Main Terra/FMP Vitrine</strong>
+          <a href="https://fractal-metascience.org/">fractal-metascience.org</a>
+        </div>
+      </div>
+      <div class="footer">
+        Author: Abdurashid Abdukarimov · ORCID 0009-0000-6394-4912 · Tashkent, Uzbekistan
+      </div>
+    </section>
+  </div>
 </body>
 </html>
