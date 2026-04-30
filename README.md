@@ -4,8 +4,10 @@
 [![License](https://img.shields.io/badge/License-CC0--1.0-lightgrey)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/Secret-Uzbek/women-made-central-asia?display_name=tag)](https://github.com/Secret-Uzbek/women-made-central-asia/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/Secret-Uzbek/women-made-central-asia)](https://github.com/Secret-Uzbek/women-made-central-asia/commits/main)
+[![Release Pipeline](https://github.com/Secret-Uzbek/women-made-central-asia/actions/workflows/release-and-publish.yml/badge.svg)](https://github.com/Secret-Uzbek/women-made-central-asia/actions/workflows/release-and-publish.yml)
+[![Zenodo Sync](https://github.com/Secret-Uzbek/women-made-central-asia/actions/workflows/zenodo-release.yml/badge.svg)](https://github.com/Secret-Uzbek/women-made-central-asia/actions/workflows/zenodo-release.yml)
+[![Terra Audit](https://github.com/Secret-Uzbek/women-made-central-asia/actions/workflows/terra-audit.yml/badge.svg)](https://github.com/Secret-Uzbek/women-made-central-asia/actions/workflows/terra-audit.yml)
 [![Pages](https://img.shields.io/badge/Pages-women--made--central--asia-0f6b57)](https://secret-uzbek.github.io/women-made-central-asia/)
-[![DOI](https://img.shields.io/badge/DOI-pending-b8860b)](./CITATION.cff)
 
 > Human-first research repository on women as civilizational operators, continuity bearers, and visible or invisible makers of Central Asia.
 
@@ -38,7 +40,19 @@ This repository focuses on women in relation to:
 ## Main public surfaces
 
 - GitHub Pages: [secret-uzbek.github.io/women-made-central-asia](https://secret-uzbek.github.io/women-made-central-asia/)
+- Citation metadata: [CITATION.cff](./CITATION.cff)
 - Repository root: [github.com/Secret-Uzbek/women-made-central-asia](https://github.com/Secret-Uzbek/women-made-central-asia)
+
+## Publication automation
+
+This repository already exposes the live publication chain:
+
+- release bundle creation on tagged releases;
+- Zenodo DOI synchronization after release publication;
+- Terra audit of the visible repository surface.
+
+The first repository DOI should be written back into `CITATION.cff` by the
+Zenodo workflow after the first successful published release.
 
 ## Reading path
 
