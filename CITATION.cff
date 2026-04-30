@@ -1,7 +1,20 @@
 cff-version: 1.2.0
-message: "If you use this work, cite it as below."
+message: "If you use or quote this repository branch, please cite it as below."
+type: software
+title: "women-made-central-asia"
 authors:
   - family-names: Abdukarimov
     given-names: Abdurashid
     orcid: "https://orcid.org/0009-0000-6394-4912"
-title: "women-made-central-asia"
+    affiliation: "Fractal Metascience Foundation, Tashkent"
+repository-code: "https://github.com/Secret-Uzbek/women-made-central-asia"
+abstract: "Human-first research repository on women as visible and invisible makers of Central Asia."
+keywords:
+  - women
+  - central-asia
+  - fractal-metascience
+  - open-science
+license: CC0-1.0
+date-released: "2026-04-30"
+version: "1.0.0"
+# doi: "10.5281/zenodo.TODO"
