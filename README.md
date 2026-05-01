@@ -1,5 +1,6 @@
 # women-made-central-asia
 
+[![Layer](https://img.shields.io/badge/Layer-Human%20Research%20Branch-b45309)](https://github.com/Secret-Uzbek/women-made-central-asia)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--6394--4912-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0000-6394-4912)
 [![License](https://img.shields.io/badge/License-CC0--1.0-lightgrey)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/Secret-Uzbek/women-made-central-asia?display_name=tag)](https://github.com/Secret-Uzbek/women-made-central-asia/releases)
@@ -11,7 +12,7 @@
 
 > Human-first research repository on women as civilizational operators, continuity bearers, and visible or invisible makers of Central Asia.
 
-## What this project is
+## Layer role
 
 This repository studies a simple but underdeveloped truth:
 
@@ -22,6 +23,23 @@ This includes both:
 
 - named women: rulers, khatuns, patrons, poetesses, dynastic actors;
 - unnamed women: mothers, daughters, craftswomen, storytellers, shrine keepers, textile bearers, hosts, and continuity workers.
+
+This repository is a human-facing research branch inside the wider Terra / FMP
+weave.
+
+It should hold:
+
+- human-readable civilizational research;
+- branch-specific publications and sources;
+- public-facing comparative and interpretive materials;
+- branch-level release, citation, and audit surfaces.
+
+It should not become:
+
+- a generic theory hub;
+- a raw archive dump;
+- a donor governance repository;
+- a machine-facing shell at the top surface.
 
 ## Why this project matters
 
@@ -68,6 +86,7 @@ This repository is connected to the wider ecosystem through:
 - [FMP-CENTRAL-REPO](https://github.com/Secret-Uzbek/FMP-CENTRAL-REPO)
 - [AIUZ](https://github.com/Secret-Uzbek/AIUZ)
 - [terra-legal](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal)
+- [GitHub Layer Model](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/GITHUB_LAYER_MODEL.md)
 
 ## Author
 
