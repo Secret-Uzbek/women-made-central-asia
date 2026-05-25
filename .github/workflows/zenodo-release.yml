@@ -1,4 +1,4 @@
-name: Zenodo DOI Registration
+﻿name: Zenodo DOI Registration
 
 on:
   release:
@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB || secrets.GHP_TOKEN || github.token }}
 
       - name: Wait for Zenodo webhook
         if: ${{ github.event_name == 'release' }}
