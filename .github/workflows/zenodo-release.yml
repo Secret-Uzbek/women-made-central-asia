@@ -1,4 +1,4 @@
-﻿name: Zenodo DOI Registration
+name: Zenodo DOI Registration
 
 on:
   release:
